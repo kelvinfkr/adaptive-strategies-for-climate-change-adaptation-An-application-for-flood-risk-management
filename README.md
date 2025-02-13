@@ -28,7 +28,19 @@ This work is supported by the U.S. National Science Foundation (1652448 and 2103
 
 
 
-Here we uploaded part of the codes as example. We will upload the full data repository after the paper get published in our github.  
+Here we uploaded part of the codes as example.
+The code would be compiled in the following procedure:
+In the main code file, there are some optimization tool boxes from monopt which some of the optimization functions relies on. 
+
+First we need to run the generate_parameters_for_surge_convolution_distribution (with slr cases prepared). 
+
+Then we could run the main optimization files, for example, static optimal which solves the optimal seawall height under static case. 
+
+And others like dp, bayesin_dp, etc... with the given name. 
+
+The policies could be evaluated by static_evaluation or DP_evaluation, which gives an evaluation of the whole policies case by case. 
+
+One could change the simulation area by editing the head settings, which gives:
 
 
 
